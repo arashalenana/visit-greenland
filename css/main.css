@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover{
+    color: darkgray;
+}
+a:active{
+    color:darkgray;
+}
+ul{
+    list-style:none;
+}
+html{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: black;
+    color:white;
+    border:none;
+}
+.main_section {
+    margin-top: 0; 
+}
+.main_section_button {
+    display: inline-block;
+    background-color: #8ABFD9;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.main_section_button:hover {
+    background-color:black;
+    color:darkgray;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin:0;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 10;
+    background: transparent; 
+    position:fixed;   
+    margin-top: 20px;
+}
+header img{width:200px;
+    margin:0;
+    display:block;
+}
+header a {
+    font-size:25px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+header.scrolled {
+    background-color:black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin:0;
+}
+
+/* Navigation menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 6px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.nav-menu li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Dropdown menu */
+.nav-menu li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #8ABFD9; 
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 20;
+}
+
+.nav-menu li:hover .dropdown {
+    display: block;
+}
+
+.nav-menu li .dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu li .dropdown a:hover {
+    background-color: #79b5e0; 
+    color: white;
+}
+
+/* Carousel slides */
+.carousel-item .bg-slide {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+}
+
+/* Carousel captions */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: left;          
+    padding-left: 20px;        
+    padding-right: 20px;
+    
+}
+
+.carousel-caption h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;      
+    max-width: 800px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/*Regions*/
+.regions{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.regions h1{
+    text-align: center;
+}
+.region_item{
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    vertical-align: top;
+    border:1px solid darkgray;
+    margin:55px; 
+    text-align: center;
+}
+.regions img{
+    width: 375px;
+    height: 300px;
+    object-fit: cover;
+}
+.region_item:hover{
+    transform:scale(1.03);}
+
+/*Adventure*/
+.adventure{
+    margin-left: 30px; 
+    margin-top: 20px;
+    align-items: center;
+}
+.adventure h1{
+    text-align: center;}
+.adventure_item{
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    vertical-align:top;
+    border:1px solid darkgray;
+    margin:28px; 
+    text-align: center;
+}
+.adventure img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-bottom: 1px solid darkgray;
+   margin-bottom: 15px;
+}
+.adventure_item:hover{
+    transform: scale(1.03);
+}
+
+/* Visit Plan */
+.visit_plan{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.visit_plan h1{
+    text-align: center;}
+/* Seasons container */
+.seasons-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each season block */
+.season {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+/* Reverse layout for zig-zag */
+.season.reverse {
+  flex-direction: row-reverse;
+  gap: 10px; /* Pull text closer to image */
+}
+.season-text {
+  flex: 0 0 50%;
+  min-width: 250px;
+}
+.season-image {
+  flex: 0 0 45%;
+}
+.season-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Consistent size */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.discover{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.discover h1{
+    text-align: center;
+}
+.discover p{
+    margin-left:80px;
+    margin-top: 20px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*Closing Section*/
+.closing_section {
+    width:100vw;
+    margin:0;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    padding: 80px 20px;
+    background:url('../images/closing.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center 56%;
+    min-height: 40vh;
+}
+.closing_section h2{
+    font-size: 30px;
+}
+#extraInfo {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#toggleBtn {
+  background-color: black;
+  color:white;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#toggleBtn:hover {
+  background-color: black;;
+  color: darkgray;
+}
+
+/*Footer*/
+.footer{
+    display:flex;
+    flex-wrap:wrap; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.footer h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.footer img{
+    width:200px;
+    margin:0;
+    display:block;
+    margin-top: 30px;
+}
+.footer a{
+    color:white;
+}
+.footer a:hover{
+    color: darkgray;
+}
+
+/* Social links */
+.social_links {
+    display: inline-block;
+    align-items: center;
+    gap: 15px;   /* space between icon */
+    text-align: center;
+}
+
+.social_links a.social-icon {
+    color: white; /*icon color */
+    font-size: 25px;  
+    margin-right: 15px;    
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.social_links a.social-icon:hover {
+    color: darkgray;       
+    transform: scale(1.2);
+}
+.footer_bottom{
+    text-align: center;
+}
+
+/*Responsive Layout for Small Screens*/
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  /* Carousel text */
+  .carousel-caption {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  /* Regions & Adventure*/
+  .region_item,
+  .adventure_item {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .regions img,
+  .adventure img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Seasons stack vertically */
+  .season,
+  .season.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .season-text,
+  .season-image {
+    flex: 1 1 100%;
+  }
+
+  /* Discover section */
+  .discover p {
+    margin-left: 0;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .closing_section {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social_links {
+    margin-left: 0;
+  }
+}
