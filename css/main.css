@@ -382,7 +382,9 @@ header.scrolled {
 
 /*Responsive Layout for Small Screens*/
 @media (max-width: 768px) {
-
+   body{
+    font-size: 16px;
+   }
   /* Header */
   header {
     flex-direction: column;
