@@ -384,13 +384,13 @@ header.scrolled {
 @media (max-width: 768px) {
   /* Header */
   header {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: flex-start;
     padding: 10 20px;
   }
 
   .nav-menu {
-    flex-direction: column;
+    flex-direction: flex;
     gap: 15px;
     margin-top: 10px;
   }
