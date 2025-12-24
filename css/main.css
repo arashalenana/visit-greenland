@@ -506,6 +506,7 @@ header.scrolled {
     flex-direction: row;
     align-items: center;
     padding: 5px 10px;
+    justify-content: space-between;
   }
   header img {
     width: 80px;
