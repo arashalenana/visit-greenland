@@ -218,7 +218,7 @@ header.scrolled {
 .adventure h1{
     text-align: center;}
 .adventure_container{
-    text-align: center;
+    margin-left: 45px;
 }
 .adventure_item{
     display:inline-block;
