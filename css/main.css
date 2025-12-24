@@ -401,7 +401,7 @@ header.scrolled {
   /* Header */
   header {
     flex-direction:row;
-    align-items: center;
+    align-items: stretch;
     padding: 10px 20px;
   }
     header img{
@@ -505,6 +505,7 @@ header.scrolled {
   header {
     flex-direction: row;
     align-items: center;
+    padding: 5px 10px;
   }
   header img {
     width: 80px;
