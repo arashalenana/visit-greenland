@@ -193,7 +193,7 @@ header.scrolled {
     padding:0;
     vertical-align: top;
     border:1px solid darkgray;
-    margin:45px; 
+    margin:35px; 
     text-align: center;
 }
 .regions img{
@@ -213,13 +213,14 @@ header.scrolled {
 .adventure h1{
     text-align: center;}
 .adventure_item{
+    margin-left: 35px;
     display:inline-block;
     justify-content: space-between;
     align-items: center;
     padding:0;
     vertical-align:top;
     border:1px solid darkgray;
-    margin:18px; 
+    margin:10px; 
     text-align: center;
 }
 .adventure img{
