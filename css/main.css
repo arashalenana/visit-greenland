@@ -506,11 +506,14 @@ header.scrolled {
     flex-direction: row;
     align-items: center;
     padding: 5px 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   header img {
     width: 80px;
-  } 
+  }
+  header>a {
+    margin-right: 35px;
+  }  
   .nav-menu {
     flex-direction: row;
     gap: 10px;
