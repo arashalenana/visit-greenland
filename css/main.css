@@ -392,21 +392,19 @@ header.scrolled {
 @media (max-width: 768px) {
   /* Header */
   header {
-    flex-direction: flex;
-    align-items: flex-start;
+    flex-direction:row;
+    align-items: stretch;
     padding: 10 20px;
   }
-
   .nav-menu {
-    flex-direction: flex;
+    flex-direction: row;
     gap: 15px;
     margin-top: 10px;
   }
 
   /* Carousel text */
   .carousel-caption {
-    text-align: center;
-    padding: 0 15px;
+    margin-left:15px;
   }
 
   .carousel-caption h1 {
