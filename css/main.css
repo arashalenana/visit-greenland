@@ -507,6 +507,7 @@ header.scrolled {
     align-items: center;
     padding: 5px 10px;
     justify-content: flex-start;
+    margin-top: 8px;
   }
   header img {
     width: 80px;
@@ -517,10 +518,10 @@ header.scrolled {
   .nav-menu {
     flex-direction: row;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
  }
   .nav-menu li a {
-    font-size: 8px;
+    font-size: 10px;
   } 
   .nav-menu li .dropdown {
     min-width: 100px;
