@@ -529,12 +529,15 @@ header.scrolled {
   .carousel-caption {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
   }
   .carousel-caption h1 {
     font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 14px;
   }
   .carousel-buttons {
     display: flex;
