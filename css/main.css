@@ -529,7 +529,7 @@ header.scrolled {
   .carousel-caption {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -70%);
     width: 90%;
     text-align: center;
   }
