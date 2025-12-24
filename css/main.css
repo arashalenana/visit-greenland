@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 h1,h2,h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -402,10 +401,10 @@ header.scrolled {
   /* Header */
   header {
     flex-direction:row;
-    align-items: stretch;
-    padding: 10 20px;
+    align-items: center;
+    padding: 10px 20px;
   }
-    header img {
+    header img{
         width: 150px;
     }   
   .nav-menu {
@@ -564,7 +563,7 @@ header.scrolled {
   }
     .carousel-item {
         height: auto;
-        width:95%;
+        width:100%;
     }   
   .closing_section h2 {
     font-size: 20px;
