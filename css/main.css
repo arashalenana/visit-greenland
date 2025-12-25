@@ -571,6 +571,9 @@ header.scrolled {
     height: auto;
     margin-top: 10px;
   }
+  .discover h1{
+    text-decoration: underline;
+  }
   .carousel-item img {
     height: auto;
   }
