@@ -544,6 +544,10 @@ header.scrolled {
     flex-direction: column;
     gap: 10px;
   }
+  .visit_plan h1{
+    text-decoration: underline;
+    margin-top: 20px;
+  }
   .seasons-container {
     display: flex;
     flex-direction: column;
@@ -556,7 +560,7 @@ header.scrolled {
     text-align: center;
   }
   .season-text h2 {
-    font-size: 18px;
+    font-size:14px;
     margin-bottom: 8px;
   }
   .season-text p {
